@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import CurrentYear from "./CurrentYear";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -117,7 +118,7 @@ export default function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-center text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p>
-            © {new Date().getFullYear()} Stephen Maikara Mogusu. All rights
+           © <CurrentYear /> Stephen Maikara Mogusu. All rights reserved.
             reserved.
           </p>
 
