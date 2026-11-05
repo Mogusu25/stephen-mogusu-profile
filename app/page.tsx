@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import CurrentYear from "@/components/CurrentYear";
 
 const experience = [
   {
@@ -607,7 +608,7 @@ export default function Home() {
             </p>
 
             <p className="w-full text-xs text-slate-400">
-              © {new Date().getFullYear()} Stephen Maikara Mogusu.
+             © <CurrentYear /> Stephen Maikara Mogusu.
               All rights reserved.
             </p>
 

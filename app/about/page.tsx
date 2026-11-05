@@ -1,4 +1,5 @@
 
+import CurrentYear from "@/components/CurrentYear";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -357,7 +358,7 @@ export default function AboutPage() {
           </p>
 
           <p className="w-full border-t border-white/10 pt-5 text-xs text-slate-400">
-            © {new Date().getFullYear()} Stephen Maikara Mogusu.
+            © <CurrentYear /> Stephen Maikara Mogusu.
             All rights reserved.
           </p>
 
