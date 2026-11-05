@@ -2,6 +2,8 @@
 "use client";
 
 import { useState } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -85,14 +87,15 @@ export default function ContactPage() {
 
               {/* EMAIL */}
               <div className="flex items-start gap-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-lg font-bold text-[#c6a76b]">
-                  @
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-[#c6a76b]">
+                  <Mail size={21} strokeWidth={1.8} />
                 </div>
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#b59656]">
                     Email
                   </p>
+
                   <a
                     href="mailto:maikaramogusu@gmail.com"
                     className="mt-2 inline-block text-sm font-medium text-[#0b1f3a] transition hover:text-[#b59656]"
@@ -104,14 +107,15 @@ export default function ContactPage() {
 
               {/* PHONE */}
               <div className="flex items-start gap-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-lg text-[#c6a76b]">
-                  ☎
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-[#c6a76b]">
+                  <Phone size={21} strokeWidth={1.8} />
                 </div>
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#b59656]">
                     Phone
                   </p>
+
                   <a
                     href="tel:+254720028762"
                     className="mt-2 inline-block text-sm font-medium text-[#0b1f3a] transition hover:text-[#b59656]"
@@ -123,14 +127,15 @@ export default function ContactPage() {
 
               {/* WHATSAPP */}
               <div className="flex items-start gap-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-sm font-bold text-[#c6a76b]">
-                  WA
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-[#c6a76b]">
+                  <FaWhatsapp size={23} />
                 </div>
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#b59656]">
                     WhatsApp
                   </p>
+
                   <a
                     href="https://wa.me/254720028762?text=Hello%20Stephen%2C%20I%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20connect."
                     target="_blank"
@@ -144,14 +149,15 @@ export default function ContactPage() {
 
               {/* LINKEDIN */}
               <div className="flex items-start gap-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-sm font-bold text-[#c6a76b]">
-                  in
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-[#c6a76b]">
+                  <FaLinkedinIn size={21} />
                 </div>
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#b59656]">
                     LinkedIn
                   </p>
+
                   <a
                     href="https://linkedin.com/in/stephen-mogusu-563a61230"
                     target="_blank"
@@ -165,19 +171,21 @@ export default function ContactPage() {
 
               {/* LOCATION */}
               <div className="flex items-start gap-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-lg text-[#c6a76b]">
-                  ⌖
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b1f3a] text-[#c6a76b]">
+                  <MapPin size={21} strokeWidth={1.8} />
                 </div>
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-[#b59656]">
                     Location
                   </p>
+
                   <p className="mt-2 text-sm font-medium text-[#0b1f3a]">
                     Nairobi, Kenya
                   </p>
                 </div>
               </div>
+
             </div>
 
             {/* OPPORTUNITIES CARD */}
@@ -311,8 +319,10 @@ export default function ContactPage() {
                 Your default email application will open with your message
                 prepared for sending.
               </p>
+
             </form>
           </div>
+
         </div>
       </section>
 

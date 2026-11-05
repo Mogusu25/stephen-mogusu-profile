@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import CurrentYear from "@/components/CurrentYear";
 
 const expertiseAreas = [
   {
@@ -132,13 +131,11 @@ export default function ExpertisePage() {
       {/* PAGE INTRODUCTION */}
       <section className="bg-[#0b1f3a] px-6 py-20 text-white md:px-12 md:py-28">
         <div className="mx-auto max-w-7xl">
-
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c6a76b]">
             PROFESSIONAL CAPABILITIES
           </p>
 
           <div className="mt-8 grid gap-10 md:grid-cols-[1.3fr_0.7fr] md:items-end">
-
             <div>
               <h1 className="max-w-4xl font-serif text-5xl leading-[1.1] md:text-7xl">
                 Technology is my field.
@@ -172,7 +169,6 @@ export default function ExpertisePage() {
                 ICT Support Professional
               </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -180,7 +176,6 @@ export default function ExpertisePage() {
       {/* EXPERTISE OVERVIEW */}
       <section className="px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
-
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a38448]">
               AREAS OF SPECIALISATION
@@ -198,13 +193,11 @@ export default function ExpertisePage() {
           </div>
 
           <div className="mt-12 space-y-5">
-
             {expertiseAreas.map((area) => (
               <article
                 key={area.number}
                 className="grid gap-7 border border-[#e2ded4] bg-white p-7 transition duration-300 hover:border-[#b59656] md:grid-cols-[90px_1fr_1fr] md:gap-10 md:p-10"
               >
-
                 <div>
                   <span className="font-serif text-4xl text-[#b59656]">
                     {area.number}
@@ -241,10 +234,8 @@ export default function ExpertisePage() {
                     ))}
                   </div>
                 </div>
-
               </article>
             ))}
-
           </div>
         </div>
       </section>
@@ -252,9 +243,7 @@ export default function ExpertisePage() {
       {/* TECHNICAL TOOLKIT */}
       <section className="bg-[#eeece5] px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
-
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
-
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a38448]">
                 TECHNOLOGY STACK
@@ -272,7 +261,6 @@ export default function ExpertisePage() {
             </div>
 
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-
               {tools.map((tool) => (
                 <div
                   key={tool.name}
@@ -287,9 +275,7 @@ export default function ExpertisePage() {
                   </p>
                 </div>
               ))}
-
             </div>
-
           </div>
         </div>
       </section>
@@ -297,7 +283,6 @@ export default function ExpertisePage() {
       {/* ADDITIONAL COMPETENCIES */}
       <section className="bg-white px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
-
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a38448]">
             PROFESSIONAL STRENGTHS
           </p>
@@ -313,7 +298,6 @@ export default function ExpertisePage() {
           </p>
 
           <div className="mt-9 grid gap-3 sm:grid-cols-2 md:grid-cols-4">
-
             {competencies.map((competency, index) => (
               <div
                 key={competency}
@@ -328,16 +312,13 @@ export default function ExpertisePage() {
                 </p>
               </div>
             ))}
-
           </div>
-
         </div>
       </section>
 
       {/* PROFESSIONAL DEVELOPMENT */}
       <section className="bg-[#0b1f3a] px-6 py-16 text-white md:px-12 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_1fr]">
-
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#c6a76b]">
               CONTINUOUS LEARNING
@@ -355,7 +336,6 @@ export default function ExpertisePage() {
           </div>
 
           <div className="border border-white/20 p-7 md:p-9">
-
             <p className="text-xs font-bold uppercase tracking-widest text-[#c6a76b]">
               TRAINING IN PROGRESS
             </p>
@@ -377,16 +357,13 @@ export default function ExpertisePage() {
               visualisation, machine learning support, generative AI,
               AI data annotation, cloud computing and cybersecurity principles.
             </p>
-
           </div>
-
         </div>
       </section>
 
       {/* CALL TO ACTION */}
       <section className="bg-[#f7f6f2] px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-8">
-
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a38448]">
               SEE MY WORK IN PRACTICE
@@ -408,30 +385,8 @@ export default function ExpertisePage() {
           >
             Explore My Portfolio →
           </Link>
-
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="bg-[#08182c] px-6 py-8 text-white md:px-12">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4">
-
-          <p className="text-sm font-bold tracking-wide">
-            STEPHEN MAIKARA MOGUSU
-          </p>
-
-          <p className="text-xs text-slate-400">
-            Data Analyst · AI Training Specialist · ICT Support Professional
-          </p>
-
-          <p className="w-full border-t border-white/10 pt-5 text-xs text-slate-400">
-           © <CurrentYear /> Stephen Maikara Mogusu.
-            All rights reserved.
-            All rights reserved.
-          </p>
-
-        </div>
-      </footer>
 
     </main>
   );

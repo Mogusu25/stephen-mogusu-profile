@@ -15,10 +15,10 @@ export default function SiteHeader() {
       <nav className="site-nav">
         <Link href="/" className="brand">
           <span className="brand-name">
-            STEPHEN <span className="brand-accent">MOGUSU.</span>
+            MAIKARA <span className="brand-accent">MOGUSU.</span>
           </span>
           <span className="brand-caption">
-            COMPUTER SCIENCE · ICT · TECHNOLOGY
+            COMPUTER SCIENCE.DATA, AI & ROBOTICS. DIGITAL LITERACY. 
           </span>
         </Link>
 
