@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import CurrentYear from "@/components/CurrentYear";
 
 const expertiseAreas = [
   {
@@ -424,7 +425,8 @@ export default function ExpertisePage() {
           </p>
 
           <p className="w-full border-t border-white/10 pt-5 text-xs text-slate-400">
-            © {new Date().getFullYear()} Stephen Maikara Mogusu.
+           © <CurrentYear /> Stephen Maikara Mogusu.
+            All rights reserved.
             All rights reserved.
           </p>
 
